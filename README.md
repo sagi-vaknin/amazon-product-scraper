@@ -19,6 +19,9 @@ This project is an Amazon product scraper built with Python, Flask, Selenium, Be
 * database.db: SQLite database file storing persistent data for the Amazon product scraper. It includes tables for storing product information and comparison prices.
 
 ### Demo
+https://github.com/sagi-vaknin/amazon-product-scraper/assets/123668270/9a4f166c-d2c2-4bc6-a07a-28689a002c72
+
+
 
 
 ### Built With
