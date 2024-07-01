@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Price List</title> 
+</head>
+<body>
+    <div class="head"><h3>Price List</h3></div>
+    <table>
+        <tr>
+            <th>US Price</th>
+            <th>UK Price</th>
+            <th>DE Price</th>
+            <th>CA Price</th>
+        </tr>
+        <tr>
+            {% for price_obj in prices %}
+                <td><a href="{{ price_obj.url }}">${{ price_obj.price }}</a></td>
+            {% endfor %}
+        </tr>
+    </table>
+
+    <p>(all prices shown in usd)</p>
+</body>
+</html>

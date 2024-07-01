@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+        <title>Search History</title>
+    </head>
+    <body>
+        <div class="head"><h3>Search History</h3></div>
+        <div class="history">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ASIN</th>
+                        <th>US Price</th>
+                        <th>US Link</th>
+                        <th>UK Price</th>
+                        <th>UK Link</th>
+                        <th>DE Price</th>
+                        <th>DE Link</th>
+                        <th>CA Price</th>
+                        <th>CA Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr>
+                        <td>{{ product.asin }}</td>
+                        <td>{{ product.price_us }}</td>
+                        <td><a href="{{ product.link_us }}" target="_blank">{{ product.link_us }}</a></td>
+                        <td>{{ product.price_uk }}</td>
+                        <td><a href="{{ product.link_uk }}" target="_blank">{{ product.link_uk }}</a></td>
+                        <td>{{ product.price_de }}</td>
+                        <td><a href="{{ product.link_de }}" target="_blank">{{ product.link_de }}</a></td>
+                        <td>{{ product.price_ca }}</td>
+                        <td><a href="{{ product.link_ca }}" target="_blank">{{ product.link_ca }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

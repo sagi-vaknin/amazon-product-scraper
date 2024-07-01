@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.obj {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    height: 150px;
+    max-width: 90%;
+}
+
+.obj2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.image_head,
+.name_head,
+.price_head {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    cursor: pointer;
+}
